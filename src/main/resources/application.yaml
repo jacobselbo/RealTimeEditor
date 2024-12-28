@@ -1,0 +1,10 @@
+ktor:
+  deployment:
+    port: 8080
+    host: 0.0.0.0
+  application:
+    modules:
+      - com.jacobselbo.plugins.FrameworksKt.configureFrameworks
+      - com.jacobselbo.plugins.SerializationKt.configureSerialization
+      - com.jacobselbo.plugins.SocketsKt.configureSockets
+      - com.jacobselbo.plugins.RoutingKt.configureRouting
